@@ -6,8 +6,8 @@ public class LogSpawnManager : MonoBehaviour
 {
     public GameObject[] logPrefabs;
 
-    private float spawnLimitLeft = -11;
-    private float spawnLimitRight = 11;
+    private float spawnLimitLeft = -8;
+    private float spawnLimitRight = 8;
     private float spawnPosY = 12;
 
     private float startDelay = 2.0f;

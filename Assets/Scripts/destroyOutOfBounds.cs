@@ -40,13 +40,4 @@ public class DestroyOutOfBounds : MonoBehaviour
         }
 
     }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        //load the restart screen if the player collides with a log
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            SceneManager.LoadScene("GameOverScene");
-        }
-    }
 }

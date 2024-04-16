@@ -6,8 +6,8 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject[] foodPrefabs;
 
-    private float spawnLimitLeft = -11;
-    private float spawnLimitRight = 11;
+    private float spawnLimitLeft = -8;
+    private float spawnLimitRight = 8;
     private float spawnPosY = 14;
 
     private float startDelay = 1.0f;

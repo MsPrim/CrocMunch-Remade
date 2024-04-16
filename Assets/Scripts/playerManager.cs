@@ -21,8 +21,8 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<Rigidbody>().velocity = Vector3.zero;
-
+        GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+        
         MoveGameObject();
         KeepInBound();
 
