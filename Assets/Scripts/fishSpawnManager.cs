@@ -24,7 +24,7 @@ public class SpawnManager : MonoBehaviour
         int randomFishIndex = Random.Range(0, foodPrefabs.Length);
 
         //Generate random fish index and a random spawning position
-        Vector3 spawnPos = new Vector3(Random.Range(spawnLimitLeft, spawnLimitRight), spawnPosY, 0);
+        Vector3 spawnPos = new Vector2(Random.Range(spawnLimitLeft, spawnLimitRight), spawnPosY);
 
         //Instantiate fish at random spawn location
         Instantiate(foodPrefabs[randomFishIndex], spawnPos, foodPrefabs[0].transform.rotation);

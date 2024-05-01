@@ -4,7 +4,7 @@ using UnityEngine;
 
 //This script manages the crocodile's movement and keeps it in bounds
 
-public class NewBehaviourScript : MonoBehaviour
+public class playerManager : MonoBehaviour
 {
     public float horizontalInput;
     public float verticalInput;
@@ -21,7 +21,7 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+        GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         
         MoveGameObject();
         KeepInBound();

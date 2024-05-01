@@ -31,11 +31,11 @@ public class DestroyOutOfBounds : MonoBehaviour
         }
         else if (transform.position.y < lowerLimit)
         {
-            Debug.Log("Game Over!");
             Destroy(gameObject);
             if (gameObject.CompareTag("Player"))
             {
                 SceneManager.LoadScene("GameOverScene");
+                Debug.Log("Game Over: Out Of Bounds");
             }
         }
 

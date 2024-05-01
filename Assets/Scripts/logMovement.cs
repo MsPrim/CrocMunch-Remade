@@ -17,13 +17,14 @@ public class logMovement : MonoBehaviour
     void Update()
     {
         //make the log swim down
-        transform.Translate(Vector3.down * Time.deltaTime * speed);
+        transform.Translate(Vector2.down * Time.deltaTime * speed);
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         //load the restart screen if the player collides with a log
         if (collision.gameObject.CompareTag("Player"))
         {
+            Debug.Log("Game Over: Log Collision Detected");
             SceneManager.LoadScene("GameOverScene");
         }
     }

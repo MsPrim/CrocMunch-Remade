@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 110647134}
   - component: {fileID: 110647137}
   - component: {fileID: 110647139}
-  - component: {fileID: 110647136}
+  - component: {fileID: 110647140}
   - component: {fileID: 110647138}
   m_Layer: 0
   m_Name: PlayerSprite
@@ -211,23 +211,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &110647136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 110647133}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ee538012534a7140af2b9a049fd25d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  horizontalInput: 0
-  verticalInput: 0
-  speed: 5
-  xRange: 7.83
-  yRange: 5
 --- !u!50 &110647137
 Rigidbody2D:
   serializedVersion: 4
@@ -312,6 +295,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.26204354, y: 0.8005333}
   m_EdgeRadius: 0
+--- !u!114 &110647140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110647133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ee538012534a7140af2b9a049fd25d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalInput: 0
+  verticalInput: 0
+  speed: 5
+  xRange: 15
+  yRange: 18
 --- !u!1 &160316123
 GameObject:
   m_ObjectHideFlags: 0
