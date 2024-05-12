@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //This script manages the crocodile's movement and keeps it in bounds
 
@@ -9,8 +10,8 @@ public class playerManager : MonoBehaviour
     public float horizontalInput;
     public float verticalInput;
     public float speed = 5.0f;
-    public float xRange = 15;
-    public float yRange = 18;
+    public float xRange = 6;
+    public float yRange = 6;
 
     // Start is called before the first frame update
     void Start()
@@ -21,10 +22,13 @@ public class playerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-        
-        MoveGameObject();
-        KeepInBound();
+        if (SceneManager.GetActiveScene().name == "Main Scene")
+        {
+            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+
+            MoveGameObject();
+            KeepInBound();
+        }
 
     }
 

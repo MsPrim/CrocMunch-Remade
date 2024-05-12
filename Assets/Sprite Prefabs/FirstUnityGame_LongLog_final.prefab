@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 5634700140759315092}
   - component: {fileID: 5049114879203123208}
   - component: {fileID: 37946861771062209}
-  - component: {fileID: -5674860758179821753}
-  - component: {fileID: 727355004389356911}
+  - component: {fileID: -5588958524784941296}
+  - component: {fileID: 7330918189667589835}
   m_Layer: 0
   m_Name: FirstUnityGame_LongLog_final
-  m_TagString: Untagged
+  m_TagString: Log
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -160,7 +160,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8571624, y: 0.16925514}
   m_EdgeRadius: 0
---- !u!114 &-5674860758179821753
+--- !u!114 &-5588958524784941296
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -172,8 +172,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18f44fd58e9e7d04291fca882fb702be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnManager: {fileID: 0}
   speed: 5
---- !u!114 &727355004389356911
+--- !u!114 &7330918189667589835
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -185,3 +186,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abee019b2ae71554db84e7a050fd0f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnManager: {fileID: 0}

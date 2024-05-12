@@ -16,9 +16,8 @@ public class FishMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //make the flish swim down
-        transform.Translate(Vector2.down * Time.deltaTime * speed);
-
+            //make the flish swim down
+            transform.Translate(Vector2.down * Time.deltaTime * speed);
     }
 
     //make the fish only collide with the player and add a point to the score

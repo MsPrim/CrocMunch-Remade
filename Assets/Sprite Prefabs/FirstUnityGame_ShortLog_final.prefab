@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5212656071705309884}
   m_Layer: 0
   m_Name: FirstUnityGame_ShortLog_final
-  m_TagString: Untagged
+  m_TagString: Log
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -172,6 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18f44fd58e9e7d04291fca882fb702be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnManager: {fileID: 0}
   speed: 6
 --- !u!114 &5212656071705309884
 MonoBehaviour:
@@ -185,3 +186,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abee019b2ae71554db84e7a050fd0f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnManager: {fileID: 0}

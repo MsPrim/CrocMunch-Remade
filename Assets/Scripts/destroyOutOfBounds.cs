@@ -6,17 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class DestroyOutOfBounds : MonoBehaviour
 {
-    private float topLimit = 15;
-    private float lowerLimit = -8;
+    public logSpawnManager2 spawnManager;
+
+    private float topLimit = 8;
+    private float lowerLimit = -7;
 
     private bool isDead;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-
+        spawnManager = FindObjectOfType<logSpawnManager2>();
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -26,6 +26,7 @@ public class DestroyOutOfBounds : MonoBehaviour
             Destroy(gameObject);
             if (gameObject.CompareTag("Player"))
             {
+                spawnManager.GameOver();
                 SceneManager.LoadScene("GameOverScene");
             }
         }
@@ -34,6 +35,7 @@ public class DestroyOutOfBounds : MonoBehaviour
             Destroy(gameObject);
             if (gameObject.CompareTag("Player"))
             {
+                spawnManager.GameOver();
                 SceneManager.LoadScene("GameOverScene");
                 Debug.Log("Game Over: Out Of Bounds");
             }
