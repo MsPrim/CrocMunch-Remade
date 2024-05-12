@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 110647139}
   - component: {fileID: 110647140}
   - component: {fileID: 110647138}
+  - component: {fileID: 110647141}
   m_Layer: 0
   m_Name: PlayerSprite
   m_TagString: Player
@@ -313,6 +314,27 @@ MonoBehaviour:
   speed: 5
   xRange: 8
   yRange: 18
+--- !u!95 &110647141
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110647133}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fb648cf97e977444cb512a0cc431b986, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &304264973
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,7 +533,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3889c33967623ea45806bf12a0511b2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myPrefab: {fileID: 8374536239083213324, guid: 8fe43af1317cc1d4a8373c804cdeeb73, type: 3}
 --- !u!1 &1266045916
 GameObject:
   m_ObjectHideFlags: 0
@@ -1130,7 +1151,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5a2b7a9524bfc4a46b0c1910b66ca5a0, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.79
   m_Pitch: 1
   Loop: 1
   Mute: 0
