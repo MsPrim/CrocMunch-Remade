@@ -10,7 +10,7 @@ public class playerManager : MonoBehaviour
     public float horizontalInput;
     public float verticalInput;
     public float speed = 5.0f;
-    public float xRange = 6;
+    public float xRange = 5;
     public float yRange = 6;
 
     // Start is called before the first frame update
